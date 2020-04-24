@@ -1,17 +1,14 @@
-function calculateAge(birthYear ) {
+function calculateAge(age) {
 
-    let yourBirthYear = birthYear;
-     return (yourBirthYear);
-
-
- 
+    const getAge = 2020 - age ;
+     return getAge;
 }
 
                                                        
 
-function fullInfo (name , birthYear) {
-    const getAge = calculateAge(birthYear);
-    const message = "Hello, my name is " + name + " and i'm " + getAge + " years old";
+function getFullInfo (name , age) {
+    const getAge = calculateAge(age);
+    const message = "Hello, my name is " + name + " and i was born in " + getAge + ".";
     return message;
 }
-console.log(fullInfo("Shahd", 26));
+console.log(getFullInfo("Shahd", 26));
